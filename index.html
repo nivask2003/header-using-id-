@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+
+    <title>Responsive Header</title>
+
+    <!-- Bootstrap 3 -->
+
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- Google Font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <div id="header"></div>
+
+    <!-- Dummy Content -->
+
+    <section class="container" style="padding-top:50px; padding-bottom:2`0px;">
+
+        <h1>Homepage</h1>
+
+        <p>
+            Responsive Bootstrap 3 sticky navigation.
+        </p>
+
+    </section>
+
+    <!-- jQuery -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Sidebar Script -->
+
+    <script src="assets/js/script.js"></script>
+
+    <!-- Load Header -->
+
+    <script>
+
+        $("#header").load("header.html", function(){
+
+            initOffcanvasSidebar();
+
+            $(window).scroll(function(){
+
+                if($(window).scrollTop() > 100){
+
+                    $("#mainHeader").addClass("sticky");
+
+                }
+                else{
+
+                    $("#mainHeader").removeClass("sticky");
+
+                }
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>

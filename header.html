@@ -1,0 +1,163 @@
+<!-- header.html -->
+
+<nav class="custom-navbar navbar navbar-default" id="mainHeader">
+
+    <div class="container">
+
+        <!-- Logo -->
+
+        <div class="navbar-header">
+
+            <button type="button"
+                    class="navbar-toggle collapsed"
+                    data-toggle="collapse"
+                    data-target="#mainNavbar">
+
+                <span class="sr-only">Toggle navigation</span>
+
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+
+            </button>
+
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="Logo" class="logo-img">
+            </a>
+
+        </div>
+
+        <button type="button" class="offcanvas-toggle" id="offcanvasToggle" aria-label="Open sidebar">
+            Info
+        </button>
+
+        <!-- Menu -->
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+
+            <ul class="nav navbar-nav navbar-right">
+
+                <li class="active">
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <!-- Dropdown -->
+
+                <li class="dropdown">
+
+                    <a href="#"
+                       class="dropdown-toggle"
+                       data-toggle="dropdown">
+
+                        Services
+                        <span class="caret"></span>
+
+                    </a>
+
+                    <ul class="dropdown-menu">
+
+                        <li>
+                            <a href="web-design.html">
+                                Web Design
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="seo.html">
+                                SEO Services
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="marketing.html">
+                                Digital Marketing
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="hosting.html">
+                                Web Hosting
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <!-- Dropdown -->
+
+                <li class="dropdown">
+
+                    <a href="#"
+                       class="dropdown-toggle"
+                       data-toggle="dropdown">
+
+                        Products
+                        <span class="caret"></span>
+
+                    </a>
+
+                    <ul class="dropdown-menu">
+
+                        <li><a href="#">Product One</a></li>
+                        <li><a href="#">Product Two</a></li>
+                        <li><a href="#">Product Three</a></li>
+
+                    </ul>
+
+                </li>
+
+                <li>
+                    <a href="gallery.html">Gallery</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="offcanvas-sidebar" id="offcanvasSidebar" aria-hidden="true">
+
+            <div class="offcanvas-sidebar-inner">
+
+                <button type="button" class="offcanvas-close" id="offcanvasClose" aria-label="Close sidebar">&times;</button>
+
+                <div class="offcanvas-brand">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="Logo" class="logo-img">
+                    </a>
+                </div>
+
+                <div class="offcanvas-contact-block">
+                    <p>We create modern, responsive websites that help businesses grow online with fast design, clear branding, and strong customer results.</p>
+                    <div class="offcanvas-contact-item">
+                        <strong>Address:</strong>
+                        <span>123 Main Street, Suite 400, Cityville</span>
+                    </div>
+                    <div class="offcanvas-contact-item">
+                        <strong>Email:</strong>
+                        <a href="mailto:info@example.com">info@example.com</a>
+                    </div>
+                    <div class="offcanvas-contact-item">
+                        <strong>Phone:</strong>
+                        <a href="tel:+1234567890">+1 (234) 567-890</a>
+                    </div>
+                    <a href="contact.html" class="offcanvas-contact-button">Contact Us</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="offcanvas-backdrop" id="offcanvasBackdrop"></div>
+
+    </div>
+
+</nav>
