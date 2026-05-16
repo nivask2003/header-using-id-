@@ -8,8 +8,18 @@
 body{
     margin:0;
     padding:0;
-    font-family:'Outfit',sans-serif;
+    font-family: 'Open Sans', sans-serif;
     overflow-x:hidden;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Spartan-Bold', sans-serif;
+}
+
+/* Paragraphs, Links and Buttons */
+p, a, button {
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* ====================================
@@ -80,7 +90,7 @@ a.navbar-brand {
     padding-right:18px;
     font-size:16px;
     font-weight:500;
-    color:#3F3D8F !important;
+    color:#000 !important;
     background:transparent !important;
     transition:0.3s;
 }
@@ -110,7 +120,7 @@ a.navbar-brand {
 .custom-navbar .dropdown-menu > li > a{
     padding:12px 24px;
     font-size:15px;
-    color:#3F3D8F;
+    color:#000;
     transition:0.3s;
 }
 
@@ -525,4 +535,10 @@ a.navbar-brand {
         padding-right:24px;
     }
 
+}
+
+@media(min-width:768px){
+    .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+        margin-left: -60px;
+    }
 }
