@@ -84,19 +84,38 @@
             <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000">
                 <span class="badge">About Us</span>
                 <h2 class="section-title">Building Bright Futures Through <span>Quality Education</span></h2>
-                <p class="about-text">Sri Dharani International School provides quality CBSE education with a focus on academic excellence,
+                <p class="about-text">Sri Dharani International School provides quality CBSE education with a focus on
+                    academic excellence,
                     discipline, creativity, and holistic student development in a modern and nurturing learning
                     environment.</p>
-                    <ul class="icon-list">
-                        <li><i class="bi bi-check2-circle"></i> Academic Excellence with Modern Teaching Methods</li>
-                        <li><i class="bi bi-check2-circle"></i> Holistic Learning for Student Development</li>
-                        <li><i class="bi bi-check2-circle"></i> Value Based Education with Strong Discipline</li>
-                        <li><i class="bi bi-check2-circle"></i> Creative Environment Encouraging Innovation and Leadership</li>
-                        <li><i class="bi bi-check2-circle"></i> Safe Campus Supporting Future Ready Learning</li>
-                    </ul>
+                <ul class="icon-list">
+                    <li><i class="bi bi-check2-circle"></i> Academic Excellence with Modern Teaching Methods</li>
+                    <li><i class="bi bi-check2-circle"></i> Holistic Learning for Student Development</li>
+                    <li><i class="bi bi-check2-circle"></i> Value Based Education with Strong Discipline</li>
+                    <li><i class="bi bi-check2-circle"></i> Creative Environment Encouraging Innovation and Leadership
+                    </li>
+                    <li><i class="bi bi-check2-circle"></i> Safe Campus Supporting Future Ready Learning</li>
+                </ul>
                 <a href="about.html" class="btn about-btn">Read More</a>
             </div>
         </div>
+    </section>
+    <section class="academics-section">
+        <div class="container">
+            <div class="heading">
+                <div class="row">
+                    <div class="col-md-6">
+                        <span class="badge">Academics</span>
+                        <h2 class="section-title">Comprehensive Curriculum for <span>Academic Excellence</span></h2>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <a href="academics.html" class="btn">View Programs</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
     </section>
 
     <!---Footer -->
@@ -112,21 +131,18 @@
 
             initOffcanvasSidebar();
 
-                function updateSticky() {
-                    var $header = $("#mainHeader");
-                    if ($(window).scrollTop() > 100) {
-                        $header.addClass("sticky");
-                        var h = $header.outerHeight();
-                        $("body").css("padding-top", h + "px");
-                    } else {
-                        $header.removeClass("sticky");
-                        $("body").css("padding-top", "0");
-                    }
+            function updateSticky() {
+                var $header = $("#mainHeader");
+                if ($(window).scrollTop() > 100) {
+                    $header.addClass("sticky");
+                } else {
+                    $header.removeClass("sticky");
                 }
+            }
 
-                // run on scroll and on load (in case page is already scrolled)
-                $(window).on("scroll", updateSticky);
-                updateSticky();
+            // run on scroll and resize
+            $(window).on("scroll resize", updateSticky);
+            updateSticky();
 
         });
 

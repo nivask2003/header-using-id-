@@ -162,12 +162,50 @@ button {
     font-family: 'Open Sans', sans-serif;
 }
 
+.section-title {
+        font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.section-title span{
+    color: #F4D40B;
+}
+
+.badge {
+    display: inline-block;
+    padding: 6px 16px;
+    background: #F4D40B;
+    color: #111;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 30px;
+    /* margin-bottom: 20px; */
+}
+
+.btn{
+    background: #4C4481;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn:hover,.btn:focus {
+    background: #3e3d8f;
+    transform: translateY(-2px);
+    color: #fff;
+    text-decoration: none;
+}
 /* ====================================
    NAVBAR
 ==================================== */
 
 .custom-navbar {
-    position: relative;
+    position: sticky;
+    top: 0;
     background: #f4d40b26;
     border: none;
     border-radius: 0;
@@ -872,27 +910,6 @@ a.navbar-brand {
     width: 100%;
 }
 
-.about-section .section-title {
-        font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.about-section span{
-    color: #F4D40B;
-}
-
-.about-section .badge {
-    display: inline-block;
-    padding: 6px 16px;
-    background: #F4D40B;
-    color: #111;
-    font-size: 14px;
-    font-weight: 600;
-    border-radius: 30px;
-    /* margin-bottom: 20px; */
-}
-
 .about-section p.about-text {
     font-size: 16px;
     color: #555;
@@ -920,20 +937,48 @@ a.navbar-brand {
     font-size: 26px;
 }
 
-.about-section .btn{
-    background: #4C4481;
-    color: #fff;
-    padding: 12px 28px;
-    border-radius: 30px;
-    font-weight: 600;
-    transition: background 0.3s ease, transform 0.3s ease;
-    margin-top: 10px;
-}
 
-.about-section .btn:hover,
-.about-section .btn:focus {
-    background: #3e3d8f;
-    transform: translateY(-2px);
-    color: #fff;
-    text-decoration: none;
+
+/* Tablet Menu Toggle */
+
+@media(min-width:768px) and (max-width:991px) {
+
+    .navbar-toggle {
+        display: block !important;
+    }
+
+    .custom-navbar .navbar-collapse {
+        display: none !important;
+        width: 100%;
+        background: #fff;
+        margin-top: 15px;
+    }
+
+    .custom-navbar .navbar-collapse.in {
+        display: block !important;
+    }
+
+    .custom-navbar .navbar-nav {
+        float: none !important;
+        margin: 0;
+    }
+
+    .custom-navbar .navbar-nav > li {
+        float: none;
+    }
+
+    .custom-navbar .navbar-nav > li > a {
+        padding: 14px 20px;
+        line-height: normal;
+        border-bottom: 1px solid #f2f2f2;
+    }
+
+    .custom-navbar .dropdown-menu {
+        position: static;
+        float: none;
+        width: 100%;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
 }
