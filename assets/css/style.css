@@ -982,3 +982,43 @@ a.navbar-brand {
     }
 
 }
+
+.academics-section {
+    padding: 60px 0;
+    background-color: #4C4481;
+    position: relative;
+}
+
+.academics-section::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 22%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1000 100"><path d="M1000 0H0v52C62.5 28 125 4 250 4c250 0 250 96 500 96 125 0 187.5-24 250-48V0Z" fill="%23FFFFFF"></path></svg>');
+    z-index: 0;
+}
+
+.academics-section .section-title {
+    color: #fff;
+}   
+
+.academics-section .btn{
+    background-color: #fff;
+    color: #4C4481;
+}
+
+.academics-section .btn:hover,.academics-section .btn:focus {
+    background-color: #f1f1f1;
+    color: #4C4481;
+}
+
+.academics-section .heading .text-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 154px;
+
+
+}
