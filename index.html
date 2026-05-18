@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -77,10 +78,10 @@
     </section>
     <section class="about-section container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
                 <img src="assets/images/about.webp" alt="About Us" class="img-fluid about-img">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000">
                 <span class="badge">About Us</span>
                 <h2 class="section-title">Building Bright Futures Through <span>Quality Education</span></h2>
                 <p class="about-text">Sri Dharani International School provides quality CBSE education with a focus on academic excellence,
@@ -93,27 +94,17 @@
                         <li><i class="bi bi-check2-circle"></i> Creative Environment Encouraging Innovation and Leadership</li>
                         <li><i class="bi bi-check2-circle"></i> Safe Campus Supporting Future Ready Learning</li>
                     </ul>
-                <a href="about.html" class="btn about-btn">Learn More</a>
+                <a href="about.html" class="btn about-btn">Read More</a>
             </div>
         </div>
     </section>
 
     <!---Footer -->
     <div id="footer"></div>
-
-    <!-- jQuery -->
-
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-    <!-- Bootstrap JS -->
-
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-    <!-- Sidebar Script -->
-
     <script src="assets/js/script.js"></script>
-
-    <!-- Load Header -->
 
     <script>
 
@@ -121,20 +112,21 @@
 
             initOffcanvasSidebar();
 
-            $(window).scroll(function () {
-
-                if ($(window).scrollTop() > 100) {
-
-                    $("#mainHeader").addClass("sticky");
-
+                function updateSticky() {
+                    var $header = $("#mainHeader");
+                    if ($(window).scrollTop() > 100) {
+                        $header.addClass("sticky");
+                        var h = $header.outerHeight();
+                        $("body").css("padding-top", h + "px");
+                    } else {
+                        $header.removeClass("sticky");
+                        $("body").css("padding-top", "0");
+                    }
                 }
-                else {
 
-                    $("#mainHeader").removeClass("sticky");
-
-                }
-
-            });
+                // run on scroll and on load (in case page is already scrolled)
+                $(window).on("scroll", updateSticky);
+                updateSticky();
 
         });
 

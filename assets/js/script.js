@@ -38,3 +38,5 @@ function initOffcanvasSidebar() {
         }
     });
 }
+
+  AOS.init();

@@ -640,6 +640,26 @@ a.navbar-brand {
         border-bottom: 1px solid #ededed;
     }
 
+    /* When header becomes sticky on mobile, reduce its height to avoid large white gap */
+    .custom-navbar.sticky {
+        min-height: 70px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+
+    .custom-navbar.sticky .navbar-brand {
+        height: 56px;
+        line-height: 56px;
+        font-size: 20px;
+    }
+
+    .custom-navbar.sticky .logo-img {
+        max-height: 56px;
+    }
+
+    .custom-navbar.sticky .navbar-toggle {
+        margin-top: 10px;
+    }
+
 }
 
 /* ====================================
@@ -687,12 +707,17 @@ a.navbar-brand {
 }
 
 .footer{
-    background: linear-gradient(90deg, #3e3d8f75 0%, #49477D 100%), url('../images/footer-bg.webp') no-repeat center center;
+    background: linear-gradient(90deg, #3e3d8f75 0%, #49477D 100%), url('../images/footer-bg.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 40px 0;
     border-bottom: 4px solid #F4D40B;
 }
 .footer img.img-fluid {
     width: 270px;
+    max-width: 100%;
+    height: auto;
     background: #ffffff;
     padding: 8px;
     border-radius: 8px;
@@ -700,8 +725,9 @@ a.navbar-brand {
 
 .footer p.footer-desc {
     color: white;
-    padding-top: 26px;
+    padding-top: 22px;
     font-size: 16px;
+    line-height: 1.75;
 }
 
 .footer a.btn.footer-btn {
@@ -732,9 +758,9 @@ a.navbar-brand {
 }
 
 .footer .footer-links li a {
-       color: white;
-    padding-top: 26px;
+    color: white;
     font-size: 16px;
+    transition: color 0.2s ease;
 }
 
 .footer .footer-links li a:hover {
@@ -779,6 +805,63 @@ a.navbar-brand {
     font-size: 14px;
     color: #fff;
     background:#49477D;
+}
+
+@media (max-width: 991px) {
+    .footer {
+        padding: 32px 0;
+    }
+
+    .footer p.footer-desc,
+    .footer .footer-links li a,
+    .footer p {
+        font-size: 15px;
+    }
+
+    .footer h4.footer-heading {
+        font-size: 22px;
+    }
+
+    .footer iframe {
+        height: 220px;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer {
+        padding: 26px 0;
+    }
+
+    .footer img.img-fluid {
+        width: 100%;
+        max-width: 220px;
+        margin-bottom: 18px;
+    }
+
+    .footer h4.footer-heading {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .footer a.btn.footer-btn {
+        padding: 10px 24px;
+        font-size: 0.95rem;
+    }
+
+    .footer iframe {
+        height: 180px;
+    }
+
+    .footer p.footer-desc,
+    .footer .footer-links li a,
+    .footer p {
+        font-size: 14px;
+    }
+
+    .footer-copy {
+        padding: 16px 10px;
+        font-size: 13px;
+    }
 }
 
 .about-section {
