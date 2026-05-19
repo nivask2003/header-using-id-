@@ -15,7 +15,11 @@
 
     <!-- Google Font -->
 
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Open+Sans:wght@400;500;600&family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
 
     <!-- CSS -->
 
@@ -23,11 +27,10 @@
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
 
 </head>
@@ -82,200 +85,252 @@ href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme
             </a>
         </div>
     </section>
-    <section class="about-section container">
-        <div class="row">
-            <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
-                <img src="assets/images/about.webp" alt="About Us" class="img-fluid about-img">
+    <section class="about-new-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <span class="badge">About Us</span>
+                    <h2 class="section-title">Building Bright Futures Through <span>Quality Education</span></h2>
+                    <div class="content">
+                        <p class="about-text">Sri Dharani International School provides quality CBSE education with a
+                            focus on
+                            academic excellence,
+                            discipline, creativity, and holistic student development in a modern and nurturing learning
+                            environment.</p>
+                    </div>
+                    <div class="counter">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2 class="counter-number">20</h2>
+                                <h4 class="counter-title">Years of Excellence</h4>
+                            </div>
+                            <div class="col-md-6">
+                                <h2 class="counter-number">500+</h2>
+                                <h4 class="counter-title">Happy Students</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="about-img">
+                        <img src="assets/images/about-new-1.webp" alt="" class="img-fluid">
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000">
-                <span class="badge">About Us</span>
-                <h2 class="section-title">Building Bright Futures Through <span>Quality Education</span></h2>
-                <p class="about-text">Sri Dharani International School provides quality CBSE education with a focus on
-                    academic excellence,
-                    discipline, creativity, and holistic student development in a modern and nurturing learning
-                    environment.</p>
-                <ul class="icon-list">
-                    <li><i class="bi bi-check2-circle"></i> Academic Excellence with Modern Teaching Methods</li>
-                    <li><i class="bi bi-check2-circle"></i> Holistic Learning for Student Development</li>
-                    <li><i class="bi bi-check2-circle"></i> Value Based Education with Strong Discipline</li>
-                    <li><i class="bi bi-check2-circle"></i> Creative Environment Encouraging Innovation and Leadership
-                    </li>
-                    <li><i class="bi bi-check2-circle"></i> Safe Campus Supporting Future Ready Learning</li>
-                </ul>
-                <a href="about.html" class="btn about-btn">Read More</a>
-            </div>
+
         </div>
     </section>
     <section class="academics-section">
         <div class="container">
-            <div class="heading">
-                <div class="row">
-                    <div class="col-md-6">
-                        <span class="badge">Academics</span>
-                        <h2 class="section-title">Comprehensive Curriculum for <span>Academic Excellence</span></h2>
-                    </div>
-                    <div class="col-md-6 text-right">
-                        <a href="academics.html" class="btn">View Programs</a>
+            <span class="badge">Academics</span>
+            <h2 class="section-title">A World-Class Curriculum for <span>Global Success</span></h2>
+            <p class="section-desc">Strong academic programs that build knowledge, creativity, confidence,
+                problem-solving skills, and lifelong learning for every student successfully.</p>
+            <div class="row why-section">
+
+                <!-- Left Image -->
+                <div class="col-md-4">
+                    <div class="why-image">
+                        <img id="tabImage" src="Assets/images/academics-1.webp" alt="Student">
                     </div>
                 </div>
 
-            </div>
-            <div class="content">
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="assets/images/academics-1.webp" alt="Academics 1" class="img-fluid">
-                        <div class="box">
-                            <h3 class="box-title">Pre - Primary</h3>
-                            <p class="box-description">A joyful learning space where young children explore, play, and
-                                build strong early learning foundations.</p>
+                <!-- Right Content -->
+                <div class="col-md-8">
+
+                    <!-- Tabs -->
+                    <ul class="nav nav-tabs tab-custom">
+                        <li class="active">
+                            <a data-toggle="tab" href="#preprimary" data-img="Assets/images/academics-1.webp">
+                                Pre Primary
+                            </a>
+                        </li>
+
+                        <li>
+                            <a data-toggle="tab" href="#primary" data-img="Assets/images/primary.webp">
+                                Primary
+                            </a>
+                        </li>
+
+                        <li>
+                            <a data-toggle="tab" href="#secondary" data-img="Assets/images/secondary.webp">
+                                Secondary
+                            </a>
+                        </li>
+
+                        <li>
+                            <a data-toggle="tab" href="#highersecondary" data-img="Assets/images/higher-secondary.webp">
+                                Higher Secondary
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab Content -->
+                    <div class="tab-content why-content">
+
+                        <span class="bg-icon glyphicon glyphicon-book"></span>
+
+                        <div id="preprimary" class="tab-pane fade in active">
+                            <h2 class="section-sub-title">Pre Primary</h2>
+
+                            <p>
+                                Our Pre-Primary program provides a warm, safe, and engaging environment where young
+                                learners begin their educational journey with confidence and joy. Through play-based
+                                learning, storytelling, creative activities, music, and interactive sessions, children
+                                develop communication, motor, social, and emotional skills. Experienced teachers
+                                encourage curiosity, imagination, and independent thinking while helping students build
+                                strong foundational learning habits. The curriculum is carefully designed to make
+                                learning enjoyable, meaningful, and age-appropriate, ensuring every child grows
+                                academically, socially, and emotionally in a nurturing atmosphere.
+                            </p>
+                            <a href="academics.html" class="btn">Read More</a>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="assets/images/primary.webp" alt="Academics 2" class="img-fluid">
-                        <div class="box">
-                            <h3 class="box-title">Primary</h3>
-                            <p class="box-description">A nurturing stage that develops creativity, confidence,
-                                communication, and core academic skills in students.</p>
+
+                        <div id="primary" class="tab-pane fade">
+                            <h2 class="section-sub-title">Primary</h2>
+
+                            <p>
+                                The Primary section focuses on building a strong academic and personal foundation for
+                                every student through interactive and activity-based learning methods. Students are
+                                encouraged to explore concepts, ask questions, and participate actively in classroom
+                                activities that improve creativity, communication, and critical thinking. Equal
+                                importance is given to academics, discipline, values, and extracurricular participation.
+                                Skilled teachers guide students with personalized attention and modern teaching
+                                approaches to ensure continuous growth. The program helps children develop confidence,
+                                responsibility, teamwork, and essential learning skills for future academic success.
+                            </p>
+                            <a href="academics.html" class="btn">Read More</a>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="assets/images/secondary.webp" alt="Academics 3" class="img-fluid">
-                        <div class="box">
-                            <h3 class="box-title">Secondary</h3>
-                            <p class="box-description">Focused learning that strengthens knowledge, critical thinking,
-                                discipline, and overall personal development.</p>
+
+                        <div id="secondary" class="tab-pane fade">
+                            <h2 class="section-sub-title">Secondary</h2>
+
+                            <p>
+                                Our Secondary program is designed to strengthen subject knowledge, analytical thinking,
+                                leadership qualities, and problem-solving abilities among students. The curriculum
+                                encourages deeper understanding through practical learning, discussions, projects, and
+                                technology-integrated teaching methods. Students receive guidance that supports both
+                                academic performance and personal development while preparing them for future
+                                educational challenges. Equal focus is given to discipline, communication, teamwork, and
+                                extracurricular activities to create well-rounded individuals. Dedicated faculty members
+                                continuously motivate students to achieve academic excellence, build self-confidence,
+                                and develop important life skills for their future.
+                            </p>
+                            <a href="academics.html" class="btn">Read More</a>
                         </div>
+
+                        <div id="highersecondary" class="tab-pane fade">
+                            <h2 class="section-sub-title">Higher Secondary</h2>
+
+                            <p>
+                                The Higher Secondary section provides advanced academic training and career-oriented
+                                learning that prepares students for higher education and competitive examinations.
+                                Specialized teaching methods, practical exposure, and structured guidance help students
+                                gain deeper subject understanding and confidence in their chosen stream. The program
+                                focuses on academic excellence, time management, critical thinking, and independent
+                                learning skills. Students are encouraged to participate in seminars, skill development
+                                activities, and career counseling sessions that support their future goals. Experienced
+                                faculty members provide continuous mentorship to help students achieve success in
+                                academics and beyond.
+                            </p>
+                            <a href="academics.html" class="btn">Read More</a>
+                        </div>
+
                     </div>
+
                 </div>
+
             </div>
         </div>
-
     </section>
-<section class="gallery-section">
 
-    <div class="container-fluid custom-slider-wrapper">
+    <section class="gallery-section py-5">
+        <div class="container">
 
-        <div class="gallery-heading text-center">
+            <div class="text-center mb-5">
+                <span class="badge">Gallery</span>
 
-            <span class="badge">Gallery</span>
+                <h2 class="section-title">
+                    Moments of <span>Learning and Achievement</span>
+                </h2>
 
-            <h2 class="section-title">
-                Explore Our <span>School Moments</span>
-            </h2>
-
-            <p>
-                Explore vibrant school moments through academics, sports, events, and celebrations that inspire creativity, confidence, friendship, and lifelong memories.
-            </p>
-
-        </div>
-
-        <div class="owl-carousel custom-center-slider">
-
-            <!-- Item -->
-
-            <div class="item">
-
-                <div class="custom-slider-card"
-                     onclick="showImage(this)">
-
-                    <img src="assets/images/academics-1.webp"
-                         alt="Gallery Image">
-
-                </div>
-
+                <p class="section-desc">
+                    A glimpse into our vibrant school life, showcasing academic excellence, extracurricular activities,
+                    and memorable events.
+                </p>
             </div>
 
-            <!-- Item -->
+            <div class="awards-masonry">
 
-            <div class="item">
+                <!-- Item 1 -->
+                <div class="award-item">
+                    <img src="assets/images/gallery-1.webp" alt="Award 1">
 
-                <div class="custom-slider-card"
-                     onclick="showImage(this)">
-
-                    <img src="assets/images/primary.webp"
-                         alt="Gallery Image">
-
+                    <div class="award-content">
+                        <h4 class="award-title">School Expo</h4>
+                    </div>
                 </div>
 
-            </div>
+                <!-- Item 2 -->
+                <div class="award-item">
+                    <img src="assets/images/gallery-2.webp" alt="Award 2">
 
-            <!-- Item -->
-
-            <div class="item">
-
-                <div class="custom-slider-card"
-                     onclick="showImage(this)">
-
-                    <img src="assets/images/secondary.webp"
-                         alt="Gallery Image">
-
+                    <div class="award-content">
+                        <h4 class="award-title">Award Winners</h4>
+                    </div>
                 </div>
 
-            </div>
+                <!-- Item 3 -->
+                <div class="award-item">
+                    <img src="assets/images/gallery-3.webp" alt="Award 3">
 
-            <!-- Item -->
-
-            <div class="item">
-
-                <div class="custom-slider-card"
-                     onclick="showImage(this)">
-
-                    <img src="assets/images/slide-1.webp"
-                         alt="Gallery Image">
-
+                    <div class="award-content">
+                        <h4 class="award-title">Medal of Excellence</h4>
+                    </div>
                 </div>
 
-            </div>
+                <!-- Item 4 -->
+                <div class="award-item">
+                    <img src="assets/images/gallery-4.webp" alt="Award 4">
 
-            <!-- Item -->
+                    <div class="award-content">
+                        <h4 class="award-title">National Level Abacus Competition</h4>
+                    </div>
+                </div>
 
-            <div class="item">
+                <!-- Item 5 -->
+                <div class="award-item">
+                    <img src="assets/images/gallery-5.webp" alt="Award 5">
 
-                <div class="custom-slider-card"
-                     onclick="showImage(this)">
+                    <div class="award-content">
+                        <h4 class="award-title">Prerana Programme 2025</h4>
+                    </div>
+                </div>
 
-                    <img src="assets/images/slide-3.webp"
-                         alt="Gallery Image">
+                <!-- Item 6 -->
+                <div class="award-item">
+                    <img src="assets/images/gallery-6.webp" alt="Award 6">
 
+                    <div class="award-content">
+                        <h4 class="award-title">District Level Abacus Competition</h4>
+                    </div>
+                </div>
+                <!-- Item 7 -->
+                <div class="award-item">
+                    <img src="assets/images/gallery-7.webp" alt="Award 7">
+
+                    <div class="award-content">
+                        <h4 class="award-title">National Level Abacus Competition</h4>
+                    </div>
                 </div>
 
             </div>
 
         </div>
-
-    </div>
-
-</section>
+    </section>
 
     <!---Footer -->
     <div id="footer"></div>
-  <div id="customImageModal"
-     class="modal fade custom-popup-modal">
-
-    <div class="modal-dialog modal-lg">
-
-        <div class="modal-content">
-
-            <button type="button"
-                    class="custom-close-btn"
-                    data-dismiss="modal">
-                ×
-            </button>
-
-            <div class="modal-body">
-
-                <img id="customPopupImage"
-                     src=""
-                     alt="Popup Image">
-
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
@@ -307,38 +362,15 @@ href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme
 
         $("#footer").load("footer.html");
 
-          $('.custom-center-slider').owlCarousel({
-    loop:true,
-    center:true,
-    margin:20,
-    autoplay:true,
-    autoplayTimeout:3000,
-    smartSpeed:700,
-    dots:true,
-    nav:false,
+        $('.tab-custom a').on('shown.bs.tab', function (e) {
 
-    responsive:{
-        0:{
-            items:1.2
-        },
-        768:{
-            items:2.2
-        },
-        1200:{
-            items:2.5
-        }
-    }
-});
+            var newImage = $(e.target).data('img');
 
-function showImage(element){
+            $('#tabImage').fadeOut(200, function () {
+                $(this).attr('src', newImage).fadeIn(200);
+            });
 
-    var imgSrc = $(element).find("img").attr("src");
-
-    $("#customPopupImage").attr("src", imgSrc);
-
-    $("#customImageModal").modal("show");
-
-}
+        });
 
     </script>
 
